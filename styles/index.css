@@ -1,0 +1,61 @@
+/* ── Global Overrides ── */
+:root {
+  --slidev-th-color: #7c3aed;
+  --color-accent: #7c3aed;
+  --color-accent-light: #a78bfa;
+}
+
+.dark {
+  --slidev-th-color: #a78bfa;
+  --color-accent: #a78bfa;
+  --color-accent-light: #c4b5fd;
+}
+
+.slidev-layout {
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.slidev-layout h1 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.slidev-layout h2 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* ── Timeline Animation Keyframes ── */
+@keyframes timeline-grow {
+  from { height: 0; }
+  to { height: 100%; }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(124, 58, 237, 0); }
+}
+
+/* ── Comparison Slider ── */
+.comparison-slider-handle {
+  cursor: ew-resize;
+  touch-action: none;
+}
+
+/* ── Code Block Overrides ── */
+.code-design-box pre {
+  margin: 0 !important;
+  border-radius: 0 0 8px 8px !important;
+}
